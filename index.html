@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <meta name="keywords" content="your, keywords" />
+  <meta name="subject" content="page login" />
+  <meta name="description" content="صفحه لاگین،هایپونت،فورم ثبت نام">
+  <meta name="keywords" content="ثبت نام,ورود به سایت,حاسب کاربری">
+
+  <meta property="og:description" content="صفحه لاگین،هایپونت،فورم ثبت نام" />
+  <meta property="og:title" content="ثبت نام دمو" />
+  <meta property="og:url" content="#" />
+
+  <meta name="DC.Language" content="fa" />
+  <meta name="DC.Publisher" content="هایپونت" />
+  <link rel="icon" href="/assets/images/Group.svg" type="image/x-icon">
+
+  <title>ورود به حساب کاربری | سایت دمو</title>
+</head>
+
+<body>
+  <img class="image-red" src="/assets/images/Ellipse 2.svg" alt="#">
+  <img class="image-light" src="/assets/images/Ellipse 3.svg" alt="#">
+  <img class="image-light-two" src="/assets/images/Ellipse 4.svg" alt="#">
+  <section class="container">
+    <!-- navigation -->
+    <div class="navbar">
+      <nav class="nav">
+        <div class="logo-title">
+          <img src="./assets/images/Group.svg" alt="logo" class="image-demo">
+          <span>دمو</span>
+        </div>
+        <button class="btn btn-login">ورود</button>
+      </nav>
+    </div>
+    <div class="login">
+      <h2>ثبت نام</h2>
+      <h4>ایجاد حساب کاربری در دمو</h4>
+    </div>
+  </section>
+  <!-- prt of null erore -->
+  <div class="alert-null">
+    <p>
+      لطفا همه مشخصات خواسته شده را تکمیل کنید
+    </p>
+  </div>
+  <!-- inputs form -->
+  <section class="input">
+    <form class="main-input">
+      <!-- username -->
+      <img src="/assets/images/Search.svg" alt="">
+      <div class="input-group">
+        <input class="username" type="text" title="" required="">
+        <label>نام کاربری</label>
+      </div>
+      <!-- email -->
+      <img src="/assets/images/email.svg" alt="">
+      <div class="input-group">
+        <input class="useremail" type="email" required>
+        <label>ایمیل</label>
+      </div>
+      <!-- password -->
+      <img id="show-pass" src="/assets/images/password.svg" alt="">
+      <div class="input-group input-password">
+        <input class="userpass" type="password" required>
+        <label>رمز عبور</label>
+        <span id="visiblity-toggle" class="material-icons-outlined">X</span>
+        <div class="erore-confirm eror-pass">رمز عبور بیش از ۸ کارکتر انتخاب کنید</div>
+      </div>
+      <!-- confirm password -->
+      <img id="show-pass-two" src="/assets/images/passCheck.svg" alt="">
+      <div class="input-group">
+        <input class="userConfirmPass" type="password" required>
+        <label>تکرار رمز عبور</label>
+        <span id="visiblity-toggle-two" class="material-icons-outlined">X</span>
+        <div class="erore-confirm eror-check">تکرار رمز عبور اشتباه است</div>
+      </div>
+      <!-- security-->
+      <div class="security">
+        <p>کد امنیتی را وارد کنید:</p>
+        <p id="random-result"></p>
+        <p>=</p>
+        <input id="user-anser" type="number">
+        <p>-</p>
+        <p id="random-number"></p>
+      </div>
+      <p class="eror-security">کد امنیتی را اشتباه وارد کردید!</p>
+      <!-- button end loin-->
+      <button class="btn btn-log">ورود</button>
+    </form>
+    <div class="check-signup">
+      <span>آیا تا به حال حساب کاربری داشته اید؟</span>
+      <button class="btn btn-end-login">ورود</button>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="/app.js"></script>
+</body>
+
+</html>
