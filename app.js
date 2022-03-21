@@ -42,7 +42,6 @@ function showEror() {
   const inputUser = document.querySelector("#user-anser");
   const erorSecurity = document.querySelector(".eror-security")
   if (inputUser.value == randomNumber.innerHTML - result.innerHTML) {
-    console.log("ok")
   } else {
     erorSecurity.style.display = "block";
     result.innerHTML = Math.floor(Math.random() * 10 + 1);
@@ -50,7 +49,6 @@ function showEror() {
     inputUser.value = '';
     setTimeout(() => {
       erorSecurity.style.display = "none";
-
     }, 3000)
   }
 }
@@ -94,3 +92,35 @@ function showConfiremPassword() {
   }
 }
 
+
+// hover
+const inputGroup = document.querySelector(".input-group");
+const divInput = document.querySelector(".hover")
+inputGroup.addEventListener("focusin", () => {
+  inputGroup.classList.add("input-group-hover");
+  divInput.classList.add("input-bgc")
+});
+inputGroup.addEventListener("focusout", () => {
+  inputGroup.classList.remove("input-group-hover")
+  divInput.classList.remove("input-bgc")
+});
+const inputGroupTwo = document.querySelector(".input-group-two");
+const divInputTwo = document.querySelector(".hover-two")
+inputGroupTwo.addEventListener("focusin", () => {
+  inputGroupTwo.classList.add("input-group-hover")
+  divInputTwo.classList.add("input-bgc")
+});
+inputGroupTwo.addEventListener("focusout", () => {
+  inputGroupTwo.classList.remove("input-group-hover")
+  divInputTwo.classList.remove("input-bgc")
+});
+const inputGroupThree = document.querySelector(".input-group-three");
+const divIputThreee = document.querySelector(".hover-three");
+inputGroupThree.addEventListener("focusin", () => {
+  inputGroupThree.classList.add("input-group-hover");
+  divIputThreee.classList.add("input-bgc")
+});
+inputGroupThree.addEventListener("focusout", () => {
+  inputGroupThree.classList.remove("input-group-hover");
+  divIputThreee.classList.remove("input-bgc")
+});
