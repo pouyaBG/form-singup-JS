@@ -55,19 +55,19 @@
     <form class="main-input">
       <!-- username -->
       <img src="/assets/images/Search.svg" alt="">
-      <div class="input-group">
-        <input class="username" type="text" title="" required="">
+      <div class="input-group ">
+        <input class="username hover" type="text" title="" required="">
         <label>نام کاربری</label>
       </div>
       <!-- email -->
       <img src="/assets/images/email.svg" alt="">
-      <div class="input-group">
-        <input class="useremail" type="email" required>
+      <div class="input-group input-group-two">
+        <input class="useremail hover-two" type="email" required>
         <label>ایمیل</label>
       </div>
       <!-- password -->
       <img id="show-pass" src="/assets/images/password.svg" alt="">
-      <div class="input-group input-password">
+      <div class="input-group input-password ">
         <input class="userpass" type="password" required>
         <label>رمز عبور</label>
         <span id="visiblity-toggle" class="material-icons-outlined">X</span>
@@ -75,8 +75,8 @@
       </div>
       <!-- confirm password -->
       <img id="show-pass-two" src="/assets/images/passCheck.svg" alt="">
-      <div class="input-group">
-        <input class="userConfirmPass" type="password" required>
+      <div class="input-group input-group-three">
+        <input class="userConfirmPass hover-three" type="password" required>
         <label>تکرار رمز عبور</label>
         <span id="visiblity-toggle-two" class="material-icons-outlined">X</span>
         <div class="erore-confirm eror-check">تکرار رمز عبور اشتباه است</div>
@@ -84,11 +84,13 @@
       <!-- security-->
       <div class="security">
         <p>کد امنیتی را وارد کنید:</p>
-        <p id="random-result"></p>
-        <p>=</p>
-        <input id="user-anser" type="number">
-        <p>-</p>
-        <p id="random-number"></p>
+        <div class="main-security">
+          <p id="random-result"></p>
+          <p>=</p>
+          <input id="user-anser" type="number">
+          <p>-</p>
+          <p id="random-number"></p>
+        </div>
       </div>
       <p class="eror-security">کد امنیتی را اشتباه وارد کردید!</p>
       <!-- button end loin-->
